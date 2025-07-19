@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background-color: #001d3d;
+  color: #ffffff;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
+.layout {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.sidebar {
+  width: 210px;
+  padding: 1em;
+  background-color: #001d3d;
+  border-right: 2px solid #c1bcd6;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar h3 {
+  color: #c1bcd6;
+  margin: 0 0 1em;
+}
+
+#genreList label {
+  display: block;
+  margin: 0.4em 0;
+  font-size: 0.95em;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+.howto-header {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+
+.howto-box {
+  border: 2px solid #c1bcd6;
+  border-radius: 10px;
+  padding: 1em;
+  min-width: 320px;
+  background-color: #031530;
+  color: #ffe4b5;
+  flex: 1;
+}
+
+.howto-box h4 {
+  margin-top: 0;
+}
+
+.howto-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.howto-box li {
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.button-box {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+button, .copy-btn {
+  padding: 0.6em 1.2em;
+  margin: 0 0.3em;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.copy-btn {
+  background-color: transparent;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+
+.copy-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.serif {
+  font-size: 1.2em;
+  white-space: pre-wrap;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 2px solid #c1bcd6;
+  border-radius: 10px;
+  background-color: #001d3d;
+}
+
+.meta {
+  text-align: right;
+  font-size: 0.9em;
+  color: #a0c4ff;
+}
+
+footer.r18 {
+  margin-top: 2em;
+  text-align: center;
+  color: #ffaaff;
+}
+
+.r18 a.blink {
+  color: #ffaaff;
+  text-decoration: underline;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;  /* スクロールバーの幅 */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #001d3d;  /* 背景 */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #c1bcd6;  /* スクロールつまみ部分 */
+  border-radius: 4px;
+  border: 1px solid #444;  /* つまみの外周 */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #e6d7ff;  /* ホバー時の色（明るく） */
+}
