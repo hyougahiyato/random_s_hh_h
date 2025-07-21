@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ランダムセリフメーカー</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+  <script>
+  if (window.innerWidth <= 768) {
+    window.location.href = "/mobile/index.html";
+  }
+  </script>
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h3>ジャンル一覧</h3>
+      <div id="genreList"></div>
+    </aside>
+
+    <div class="main">
+      <header class="howto-header">
+        <div class="howto-box">
+          <h3>📝 使用方法</h3>
+          <ul>
+            <li>① ジャンルをクリックして選択する。（複数選択OK）</li>
+            <li>② 「ランダム表示」ボタンを押す。</li>
+            <li>※ ジャンル未選択なら全セリフからランダムになります。</li>
+            <li>※ ランダム表示後コピーボタンが台詞したに表示されます。</li>
+          </ul>
+        </div>
+        <div class="howto-box">
+          <h3>ランダム台詞の説明</h3>
+          <ul>
+            <li>・著作権は <a href="https://x.com/Shiu_M_Hikaru_S" target="_blank">管理人</a> にあります</li>
+            <li>・セリフ中の記号説明：○（一人称）□（二人称）△△（三人称）</li>
+            <li>・過度な改変以外はご自由に</li>
+            <li>・微エロ、エロを含むため、ジャンル選択をお忘れなく</li>
+          </ul>
+        </div>
+      </header>
+
+      <main>
+        <h1>ランダムセリフメーカー</h1>
+        <div class="button-box">
+          <button onclick="displayRandomSerif()">ランダム表示</button>
+        </div>
+                <div class="meta" id="metaBox">[ジャンル: -] [文字数: 0文字]</div>
+
+        <div class="serif" id="serifBox">セリフがここに表示されます。</div>
+      </main>
+
+      <footer class="r18">
+        <p>※完全なR18台詞は以下サイトより御覧ください※<br>
+        <a href="https://nanos.jp/hyougahiyato4/novel/1/?ParentDataID=50" target="_blank" class="blink">【閲覧注意】</a></p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex"> <!-- ← 検索対策もバッチリ！ -->
+  <title>セリフ集</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #EEE6F9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      text-align: center;
+      color: gray;
+      background-color: #AEEEEE;
+      padding: 10px;
+      border-radius: 8px;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .main-box {
+      background-color: #001F3F;
+      color: lightblue;
+      border: 2px solid #ccc;
+      padding: 20px;
+      margin: 20px auto 0;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 12px;
+      font-size: 1.2em;
+      text-align: center;
+      position: relative;
+    }
+
+    #copyMsg {
+      color: #fff;
+      font-size: 0.8em;
+      margin-top: 10px;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .copy-button {
+      background-color: #6A0DAD;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .random-button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #1E90FF;
+      color: gray;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .notice {
+      color: #883B28;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-align: center;
+    }
+
+    .sub-notice {
+      text-align: center;
+      font-size: 0.8em;
+      color: #FF3333;
+    }
+
+    .pronoun-notice {
+      color: #883B28;
+      font-size: 0.85em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>セリフを表示</h2>
+
+  <div style="text-align: center; margin: 15px 0;">
+    <button onclick="showRandom()" class="random-button">ランダム表示</button>
+  </div>
+
+  <div class="main-box">
+    <div id="outputText">▼ セリフがここに表示されます ▼</div>
+    <div id="genreTag" style="font-size: 0.9em; margin-top: 10px;"></div>
+    <div id="counter" style="font-size: 0.9em; margin-top: 5px;"></div>
+    <div id="copyMsg">コピーしました！</div>
+  </div>
+
+  <div style="max-width: 600px; margin: 10px auto 20px; text-align: left;">
+    <button onclick="copyText()" class="copy-button">コピー</button>
+  </div>
+
+  <p class="notice">※完全アウトなR18禁出ます※</p>
+  <p class="sub-notice">※このページは非公開です。URLを知っている人だけが閲覧できます。</p>
+  <p class="pronoun-notice">！一人称〇、二人称□、三人称△△（ここでは複数系、おまえらやあいつらなどの言葉を指します）！</p>
+
+  <script src="script1.js"></script>
+</body>
+</html>
