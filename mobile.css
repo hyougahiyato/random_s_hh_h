@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yu Gothic", sans-serif;
+  background-color: #001d3d;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 1em;
+  background-color: #001d3d;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+
+select, button {
+  font-size: 1em;
+  padding: 0.6em 1em;
+  margin: 0.5em 0;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.copy-btn {
+  background-color: #444;
+  color: #fff;
+  margin-top: 1em;
+}
+
+main {
+  padding: 1em;
+}
+
+.serif {
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: #031530;
+  padding: 1.2em;
+  font-size: 1.1em;
+  text-align: left; /* ←ここ！ */
+}
+
+#resetButton {
+  background-color: #999;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1em;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+#resetButton:hover {
+  background-color: #777;
+}
+.meta {
+  font-size: 0.9em;
+  color: #a0c4ff;
+  margin-top: 0.5em;
+}
+
+.howto-box {
+  border: 2px solid #c1bcd6;
+  border-radius: 10px;
+  padding: 1em;
+  min-width: 320px;
+  background-color: #031530;
+  color: #ffe4b5;
+  flex: 1;
+  text-align:left;
+  gap: 1px;
+  margin-bottom: 5px;
+}
+
+.howto-box h4 {
+  margin-top: 0;
+}
+
+.howto-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.howto-box li {
+  margin-bottom: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+footer {
+  padding:5px;
+  background-color: #001d3d;
+
+
+}
+footer a {
+  color: #ffaaff;
+  text-decoration: underline;
+}
+.r18 {
+  color: #ff99cc;
+  text-align: center;
+}
